@@ -1,0 +1,6 @@
+transaction_id,customer_id,timestamp_utc,amount,currency,beneficiary,channel,status,alerted_by_customer,fraud_case_id
+WIRE-9001,CUST-1001,2026-08-31T08:30:00Z,8400.00,USD,Northwind Importers,wire,pending,true,
+WIRE-9002,CUST-1001,2026-08-30T16:15:00Z,1250.00,USD,Contoso Services,wire,completed,false,
+WIRE-9003,CUST-1001,2026-08-28T11:00:00Z,75.00,USD,Fabrikam LLC,card,completed,false,
+WIRE-9004,CUST-1002,2026-08-31T09:20:00Z,5200.00,USD,Adventure Works,wire,pending,true,
+

@@ -1,0 +1,4 @@
+customer_id,full_name,date_of_birth,last4_ssn,phone,email,address,account_takeover_flag
+CUST-1001,Avery Johnson,1988-04-15,1122,+1-415-555-0142,avery.johnson@example.com,"100 Market Street, San Francisco, CA 94105",false
+CUST-1002,Jordan Lee,1979-09-02,7788,+1-212-555-0199,jordan.lee@example.com,"8 Park Avenue, New York, NY 10016",false
+
