@@ -10,6 +10,8 @@ from google.adk.agents import LlmAgent
 from google.adk.models.lite_llm import LiteLlm
 from google.adk.models.registry import LLMRegistry
 
+from .tools import recent_wire_transactions_tool
+
 
 load_dotenv()
 
@@ -60,8 +62,11 @@ transaction_review_agent = LlmAgent(
     model=HELIX_MODEL,
     instruction=(
         "Present supplied wire transactions one at a time. Ask whether the caller recognizes each. "
-        "Do not claim a transaction is fraudulent; collect the caller's answer."
+        "Do not claim a transaction is fraudulent; collect the caller's answer. "
+        "Use the transaction lookup tool only after authentication is complete; "
+        "it is automatically restricted to the authenticated caller."
     ),
+    tools=[recent_wire_transactions_tool],
 )
 
 ato_interview_agent = LlmAgent(
